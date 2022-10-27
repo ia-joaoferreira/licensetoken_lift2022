@@ -1,0 +1,165 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "updateInterval",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "checkUpkeep",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "upkeepNeeded",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "counter",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "interval",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "lastTimeStamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"name": "performUpkeep",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"counter()": {
+					"notice": "Public counter variable"
+				},
+				"interval()": {
+					"notice": "Use an interval in seconds and a timestamp to slow execution of Upkeep"
+				}
+			},
+			"notice": "THIS IS AN EXAMPLE CONTRACT THAT USES HARDCODED VALUES FOR CLARITY. THIS IS AN EXAMPLE CONTRACT THAT USES UN-AUDITED CODE. DO NOT USE THIS CODE IN PRODUCTION.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"docs.chain.link/samples/Keepers/KeepersCounter.sol": "Counter"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts/src/v0.8/KeeperBase.sol": {
+			"keccak256": "0x5dc972fdf3a524312e68ef6d2e58bcdaf965d08d9415aefa289207350c2bc85a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d39ed8c38c1527a48c08ccd905a58a438998d38700c238c371ba522452f99d51",
+				"dweb:/ipfs/QmSUL2zq3Gm1yVXgAsqaEH8vcX3z77WeTphsDkFsWRrKvy"
+			]
+		},
+		"@chainlink/contracts/src/v0.8/KeeperCompatible.sol": {
+			"keccak256": "0xfdb84fea1ee213662ae66b95d4f620be73b7af5ede58be3d330b222b9b566d95",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://e960e1753c1a7c3da0ead8889631662cc77d8359f8de86bdc958a57960b82127",
+				"dweb:/ipfs/Qma8iUq8T8vWfHcRSgv38dhVyzdpKoDPR5jgpr31WYZSvx"
+			]
+		},
+		"@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol": {
+			"keccak256": "0xb6577cda6b731b655aebcb6e3c24f8658d3f4c5eda07200622d07d4570af33ea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a27100d0f91626ace3dd6912d41033a9bba43ea31b5e17f3d847fef1155398a4",
+				"dweb:/ipfs/QmepkhmjCMnyPF166QcNEojmc1ZeSNPRs619r5GpU1YRPn"
+			]
+		},
+		"docs.chain.link/samples/Keepers/KeepersCounter.sol": {
+			"keccak256": "0xe80773074e99fbeca6a4d76801997bfb8aab375a55d791707856de206a5cb65f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fbeee6d0d4b8f8433085581dca6d06e6c2edc75c335f4ab00002cd41764fff51",
+				"dweb:/ipfs/QmQkR8gazm5pvFf8tR9cFcdtNqyGfFvWokaYxEyEesEoUa"
+			]
+		}
+	},
+	"version": 1
+}
